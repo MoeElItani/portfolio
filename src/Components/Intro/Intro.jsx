@@ -23,9 +23,12 @@ const Intro = () => {
                <span>Mohammad El Itani</span>
                <span>
                   A Computer Science fresh graduate that's very
-                  passionate about web development as well as
-                  learning and improving my skills through online
-                  courses and project-based learning
+                  passionate about web development
+                  <br />
+                  as well as learning and improving my skills
+                  through online courses and project-based
+                  <br />
+                  learning!
                </span>
                <button className='button i-button'>
                   Hire me
@@ -79,8 +82,8 @@ const Intro = () => {
                   txt2='Fresh Graduate'
                />
             </div>
-            {/* blur divs */}
-            <div className='blur'></div>
+            {/* blur div(s) */}
+            <div className='blur' />
             <div
                className='blur'
                style={{
@@ -89,7 +92,7 @@ const Intro = () => {
                   left: '-5rem',
                   width: '21rem',
                }}
-            ></div>
+            />
          </div>
       </div>
    )

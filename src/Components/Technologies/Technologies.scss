@@ -1,0 +1,60 @@
+.technologies {
+   padding: 0 3rem;
+   display: flex;
+   height: 90vh;
+   margin: 9rem 0 13rem 0;
+
+   .awesome {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      & > :nth-child(1) {
+         font-size: 2.75rem;
+         font-weight: bold;
+         color: var(--black);
+      }
+      & > :nth-child(2) {
+         font-size: 2.75rem;
+         font-weight: bold;
+         color: var(--orange);
+      }
+      & > :nth-child(3) {
+         font-weight: 100;
+         font-size: 14px;
+         color: var(--gray);
+         margin: 2.75% 0;
+      }
+      .t-button {
+         width: 7.75rem;
+         height: 2.25rem;
+      }
+   }
+
+   .cards {
+      position: relative;
+
+      & > * {
+         position: absolute;
+      }
+
+      // blur
+      .blur{
+         width: 22rem;
+         height: 14rem;
+         border-radius: 50%;
+         filter: blur(72px);
+         z-index: -999;
+      }
+      .t-blur1 {
+         top: 20rem;
+         left: -36rem;
+         background: #c1f5ff;
+      }
+      .t-blur2 {
+         top: 8rem !important;
+         left: 32rem !important;
+         background: var(--purple);
+      }
+   }
+}
