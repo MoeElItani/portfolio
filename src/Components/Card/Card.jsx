@@ -2,15 +2,13 @@ import React from 'react'
 // Styles
 import './Card.scss'
 
-const Card = ({ emoji, heading, detail, more }) => {
+const Card = ({ emoji, title, school, year }) => {
    return (
       <div className='card'>
          <img src={emoji} alt='emoji' />
-         <span>{heading}</span>
-         <span>{detail}</span>
-         <a href={more} target='_blank' rel='noreferrer'>
-            <button className='c-button'>Learn more</button>
-         </a>
+         <span>{title}</span>
+         <span>{school}</span>
+         <span>{year}</span>
       </div>
    )
 }
