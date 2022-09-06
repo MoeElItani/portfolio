@@ -1,0 +1,78 @@
+.technologies {
+   padding: 0 3rem 0 3rem;
+   display: flex;
+   height: 90vh;
+   margin-top: 4rem;
+
+   .t-right {
+      position: relative;
+
+      .t-mainCircle {
+         left: 9rem;
+         top: 2rem;
+         position: relative;
+         width: 18rem;
+         height: 18rem;
+         border-radius: 50%;
+         box-shadow: var(--smboxShadow);
+         background-color: #fff;
+         & > * {
+            position: absolute;
+         }
+         & > :nth-child(1) {
+            top: -3rem;
+            left: 6rem;
+         }
+         & > :nth-child(2) {
+            top: 5rem;
+            left: -3rem;
+         }
+         & > :nth-child(3) {
+            top: 5rem;
+            left: 6rem;
+         }
+         & > :nth-child(4) {
+            top: 5rem;
+            left: 15rem;
+         }
+         & > :nth-child(5) {
+            top: 13rem;
+            left: 6rem;
+         }
+
+         .t-secCircle {
+            width: 6rem;
+            height: 6rem;
+            position: absolute;
+            background: #fff;
+            border: 5px solid #ebebeb;
+            box-shadow: var(--smboxShadow);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & > img {
+               scale: 0.75;
+            }
+         }
+
+         .t-backCircle {
+            width: 13rem;
+            height: 13rem;
+            position: absolute;
+            border-radius: 50%;
+            z-index: -1;
+         }
+         .blueCircle {
+            background: #1949b8;
+            top: -2rem;
+            left: 10rem;
+         }
+         .yellowCircle {
+            background: #f5c32c;
+            top: 8rem;
+            left: 10rem;
+         }
+      }
+   }
+}

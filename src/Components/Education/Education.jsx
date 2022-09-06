@@ -5,14 +5,12 @@ import './Education.scss'
 import HeartEmoji from '../../img/heartemoji.png'
 import Glasses from '../../img/glasses.png'
 import Card from '../Card/Card'
-// Resume
-import Resume from './Education.scss'
 
 const Education = () => {
    return (
       <div className='technologies'>
          {/* Left Side */}
-         <div className='awesome'>
+         <div className='myEducation'>
             <span>My</span>
             <span>Education</span>
             <span>
@@ -24,11 +22,7 @@ const Education = () => {
                <br />
                development alongside my school education
             </span>
-            <a href={Resume} download>
-               <button className='button t-button'>
-                  Download CV
-               </button>
-            </a>
+
             <div
                className='t-blur2'
                style={{ background: '#ABF1FF94' }}

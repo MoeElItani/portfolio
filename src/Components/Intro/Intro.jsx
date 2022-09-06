@@ -6,12 +6,14 @@ import Github from '../../img/github.png'
 import LinkedIn from '../../img/linkedin.png'
 import Vector1 from '../../img/Vector1.png'
 import Vector2 from '../../img/Vector2.png'
-import Boy from '../../img/boy.png'
+import Me from '../../img/ME.png'
 import ThumbUp from '../../img/thumbup.png'
 import Crown from '../../img/crown.png'
 import GlassesEmoji from '../../img/glassesimoji.png'
 // Other Components
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
+// Resume
+import Resume from '../../Resume/LinkedIn Profile.pdf'
 
 const Intro = () => {
    return (
@@ -30,9 +32,11 @@ const Intro = () => {
                   <br />
                   learning!
                </span>
-               <button className='button i-button'>
-                  Hire me
-               </button>
+               <a href={Resume}>
+                  <button className='button t-button'>
+                     Download CV
+                  </button>
+               </a>
                <div className='i-icons'>
                   <a
                      target='_blank'
@@ -56,7 +60,7 @@ const Intro = () => {
             {/* Images */}
             <img src={Vector1} alt='Vector1' />
             <img src={Vector2} alt='Vector2' />
-            <img src={Boy} alt='Boy' />
+            <img src={Me} alt='Mohammad El Itani' />
             <img src={GlassesEmoji} alt='Glasses Emoji' />
             {/* Floating Mini Cards */}
             <div
@@ -73,7 +77,8 @@ const Intro = () => {
             </div>
             <div
                style={{
-                  top: '18rem',
+                  top: '19.5rem',
+                  left: '2.8rem',
                }}
             >
                <FloatingDiv
