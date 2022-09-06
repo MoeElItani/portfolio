@@ -2,11 +2,11 @@ import React from 'react'
 // Styles
 import './Technologies.scss'
 
-import Upwork from '../../img/Upwork.png'
-import Fiverr from '../../img/fiverr.png'
-import Amazon from '../../img/amazon.png'
-import Shopify from '../../img/Shopify.png'
-import Facebook from '../../img/Facebook.png'
+import html from '../../img/html.png'
+import scss from '../../img/scss.png'
+import react from '../../img/react.png'
+import javascript from '../../img/javascript.png'
+import redux from '../../img/redux.png'
 
 const Technologies = () => {
    return (
@@ -32,19 +32,19 @@ const Technologies = () => {
          <div className='t-right'>
             <div className='t-mainCircle'>
                <div className='t-secCircle'>
-                  <img src={Upwork} alt='Upwork' />
+                  <img src={html} alt='html' />
                </div>
                <div className='t-secCircle'>
-                  <img src={Fiverr} alt='Fiverr' />
+                  <img src={scss} alt='scss' />
                </div>
                <div className='t-secCircle'>
-                  <img src={Amazon} alt='Amazon' />
+                  <img src={react} alt='react' />
                </div>
                <div className='t-secCircle'>
-                  <img src={Shopify} alt='Shopify' />
+                  <img src={javascript} alt='javascript' />
                </div>
                <div className='t-secCircle'>
-                  <img src={Facebook} alt='Facebook' />
+                  <img src={redux} alt='redux' />
                </div>
 
                {/* Background Circles */}

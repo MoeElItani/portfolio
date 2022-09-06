@@ -15,10 +15,8 @@ const Navbar = () => {
             <div className='n-list'>
                <ul>
                   <li>Home</li>
-                  <li>Services</li>
-                  <li>Experience</li>
-                  <li>Portfolio</li>
-                  <li>Testimonials</li>
+                  <li>Education</li>
+                  <li>Technologies</li>
                </ul>
             </div>
             <button className='button n-button'>Contact</button>
