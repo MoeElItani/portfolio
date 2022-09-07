@@ -13,8 +13,8 @@ const Technologies = () => {
       <div className='technologies'>
          {/* Left Side */}
          <div className='myEducation'>
+            <span>Front-End</span>
             <span>Technologies</span>
-            <span>I've Learned</span>
             <span>
                I constantly look for the newest and most demanded
                technologies to learn

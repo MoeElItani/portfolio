@@ -25,13 +25,10 @@ const Intro = () => {
                <span>Hi I Am</span>
                <span>Mohammad El Itani</span>
                <span>
-                  A Computer Science fresh graduate that's very
-                  passionate about web development
-                  <br />
-                  as well as learning and improving my skills
-                  through online courses and project-based
-                  <br />
-                  learning!
+                  I'm a Front-End Web Developer <br /> I'm also a
+                  Fresh Computer Science Graduate <br />
+                  Please check my Resume by clicking the download
+                  button below
                </span>
                <a href={Resume}>
                   <button className='button t-button'>
@@ -54,12 +51,12 @@ const Intro = () => {
                      <img src={LinkedIn} alt='LinkedIn Icon' />
                   </a>
                   <a
-                  target='_blank'
-                  rel='noreferrer'
-                  href='https://www.instagram.com/_mhmditani'
-               >
+                     target='_blank'
+                     rel='noreferrer'
+                     href='https://www.instagram.com/_mhmditani'
+                  >
                      <img src={Instagram} alt='Instagram Icon' />
-               </a>
+                  </a>
                </div>
             </div>
          </div>
