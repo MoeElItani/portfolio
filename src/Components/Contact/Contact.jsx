@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser'
 // Styles
 import './Contact.scss'
 
-const Contact = () => {
+const Contact = ({ darkMode }) => {
    const [name, setName] = useState('')
    const [email, setEmail] = useState('')
    const [msg, setMsg] = useState('')
@@ -44,7 +44,9 @@ const Contact = () => {
       <div className='contact-form'>
          <div className='c-left'>
             <div className='c-left'>
-               <span>Get in touch</span>
+               <span style={{ color: darkMode ? '#eee' : '' }}>
+                  Get in touch
+               </span>
                <span>Contact me</span>
                <div
                   className='blur c-blur1'

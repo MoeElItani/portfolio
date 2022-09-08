@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 // Styles
 import './Intro.scss'
 // Icons & Images
@@ -15,16 +15,21 @@ import GlassesEmoji from '../../img/glassesimoji.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 // Resume
 import Resume from '../../Resume/LinkedIn Profile.pdf'
+// Imports
+import { themeContext } from '../../Context'
 
-const Intro = () => {
+const Intro = ({darkMode}) => {
+
    return (
       <div className='intro'>
          {/* left Side */}
          <div className='i-left'>
             <div className='i-name'>
-               <span>Hi I Am</span>
+               <span style={{ color: darkMode ? '#eee' : '' }}>
+                  Hi I Am
+               </span>
                <span>Mohammad El Itani</span>
-               <span>
+               <span style={{ color: darkMode ? '#ccc' : '' }}>
                   I'm a Front-End Web Developer <br /> I'm also a
                   Fresh Computer Science Graduate <br />
                   Please check my Resume by clicking the download
@@ -78,6 +83,7 @@ const Intro = () => {
                   img={Crown}
                   txt1='Front-End'
                   txt2='Developer'
+                  darkMode={darkMode}
                />
             </div>
             <div
@@ -90,6 +96,7 @@ const Intro = () => {
                   img={ThumbUp}
                   txt1='Computer Science'
                   txt2='Fresh Graduate'
+                  darkMode={darkMode}
                />
             </div>
             {/* blur div(s) */}

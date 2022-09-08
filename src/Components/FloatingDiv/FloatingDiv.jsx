@@ -2,11 +2,11 @@ import React from 'react'
 // Styles
 import './FloatingDiv.scss'
 
-const FloatingDiv = ({ img, txt1, txt2 }) => {
+const FloatingDiv = ({ img, txt1, txt2, darkMode }) => {
    return (
-      <div className='floatingDiv'>
+      <div className='floatingDiv' style={{ background: darkMode ? '#eee' : '' }}>
          <img src={img} alt='Crown' />
-         <span>
+         <span style={{ color: darkMode ? '#000' : '' }}>
             {txt1}
             <br />
             {txt2}

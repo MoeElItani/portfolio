@@ -8,14 +8,16 @@ import react from '../../img/react.png'
 import javascript from '../../img/javascript.png'
 import redux from '../../img/redux.png'
 
-const Technologies = () => {
+const Technologies = ({ darkMode }) => {
    return (
       <div className='technologies'>
          {/* Left Side */}
          <div className='myEducation'>
-            <span>Front-End</span>
+            <span style={{ color: darkMode ? '#eee' : '' }}>
+               Front-End
+            </span>
             <span>Technologies</span>
-            <span>
+            <span style={{ color: darkMode ? '#ccc' : '' }}>
                I constantly look for the newest and most demanded
                technologies to learn
                <br />
@@ -30,20 +32,53 @@ const Technologies = () => {
 
          {/* Right Side */}
          <div className='t-right'>
-            <div className='t-mainCircle'>
-               <div className='t-secCircle'>
+            <div
+               className='t-mainCircle'
+               style={{ background: darkMode ? '#333' : '' }}
+            >
+               <div
+                  className='t-secCircle'
+                  style={{
+                     background: darkMode ? '#555' : '',
+                     border: darkMode ? '4px solid #aaa' : '',
+                  }}
+               >
                   <img src={html} alt='html' />
                </div>
-               <div className='t-secCircle'>
+               <div
+                  className='t-secCircle'
+                  style={{
+                     background: darkMode ? '#555' : '',
+                     border: darkMode ? '4px solid #aaa' : '',
+                  }}
+               >
                   <img src={scss} alt='scss' />
                </div>
-               <div className='t-secCircle'>
+               <div
+                  className='t-secCircle'
+                  style={{
+                     background: darkMode ? '#555' : '',
+                     border: darkMode ? '4px solid #aaa' : '',
+                  }}
+               >
                   <img src={react} alt='react' />
                </div>
-               <div className='t-secCircle'>
+               <div
+                  className='t-secCircle'
+                  style={{
+                     background: darkMode ? '#555' : '',
+                     border: darkMode ? '4px solid #aaa' : '',
+                  }}
+               >
                   <img src={javascript} alt='javascript' />
                </div>
-               <div className='t-secCircle'>
+               <div
+                  className='t-secCircle'
+                  style={{
+                     background: darkMode ? '#555' : '',
+                     border: darkMode ? '4px solid #aaa' : '',
+                  }}
+               >
                   <img src={redux} alt='redux' />
                </div>
 

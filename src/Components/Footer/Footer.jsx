@@ -1,9 +1,8 @@
 import React from 'react'
 // Styles
 import './Footer.scss'
-// Images
+// Images & Icons
 import footer from '../../img/wave.png'
-// Icons
 import GitHub from '@iconscout/react-unicons/icons/uil-github'
 import LinkedIn from '@iconscout/react-unicons/icons/uil-linkedin'
 import Instagram from '@iconscout/react-unicons/icons/uil-instagram'
@@ -41,7 +40,10 @@ const Footer = () => {
                   <Instagram color='#fff' size='3rem' />
                </a>
             </div>
-            <span className='f-copyrights'>&copy; 2022 Mohammad El Itani | All Rights Reserved</span>
+            <span className='f-copyrights'>
+               &copy; 2022 Mohammad El Itani | All Rights
+               Reserved
+            </span>
          </div>
       </div>
    )

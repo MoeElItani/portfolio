@@ -1,4 +1,5 @@
 import React from 'react'
+import Toggle from '../Toggle/Toggle'
 // Styles
 import './Navbar.scss'
 
@@ -8,7 +9,7 @@ const Navbar = () => {
          <div className='n-left'>
             {/* Logo & theme */}
             <div className='n-name'>Mohammad El Itani</div>
-            <span>toggle</span>
+            <Toggle />
          </div>
          <div className='n-right'>
             {/* Navbar List  & Contact Button */}
