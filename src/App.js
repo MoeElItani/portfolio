@@ -14,7 +14,7 @@ import { useContext } from 'react'
 function App() {
    const theme = useContext(themeContext)
    const darkMode = theme.state.darkMode
-
+   const transition = { duration: 2, type: 'string' }
    return (
       <div
          className='App'
@@ -24,10 +24,22 @@ function App() {
          }}
       >
          <Navbar />
-         <Intro darkMode={darkMode} />
-         <Education darkMode={darkMode} />
-         <Technologies darkMode={darkMode} />
-         <Contact darkMode={darkMode} />
+         <Intro
+            darkMode={darkMode}
+            transition={transition}
+         />
+         <Education
+            darkMode={darkMode}
+            transition={transition}
+         />
+         <Technologies
+            darkMode={darkMode}
+            transition={transition}
+         />
+         <Contact
+            darkMode={darkMode}
+            transition={transition}
+         />
          <Footer />
       </div>
    )

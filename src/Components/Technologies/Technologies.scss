@@ -1,9 +1,4 @@
 .technologies {
-   padding: 0 3rem 0 3rem;
-   display: flex;
-   height: 90vh;
-   margin-top: 4rem;
-
    .t-right {
       position: relative;
 
@@ -56,23 +51,23 @@
             }
          }
 
-         .t-backCircle {
-            width: 13rem;
-            height: 13rem;
-            position: absolute;
-            border-radius: 50%;
-            z-index: -1;
-         }
-         .blueCircle {
-            background: #1949b8;
-            top: -2rem;
-            left: 10rem;
-         }
-         .yellowCircle {
-            background: #f5c32c;
-            top: 8rem;
-            left: 10rem;
-         }
+      }
+      .t-backCircle {
+         width: 13rem;
+         height: 13rem;
+         position: absolute;
+         border-radius: 50%;
+         z-index: -1;
+      }
+      .blueCircle {
+         background: #1949b8;
+         top: -2rem;
+         left: 18rem;
+      }
+      .yellowCircle {
+         background: #f5c32c;
+         top: 9rem;
+         left: 18rem;
       }
    }
 }

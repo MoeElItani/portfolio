@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 // Styles
 import './Intro.scss'
 // Icons & Images
@@ -15,10 +15,11 @@ import GlassesEmoji from '../../img/glassesimoji.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 // Resume
 import Resume from '../../Resume/LinkedIn Profile.pdf'
-// Imports
-import { themeContext } from '../../Context'
+//imports
+import { motion } from 'framer-motion'
 
-const Intro = ({darkMode}) => {
+const Intro = ({ darkMode, transition }) => {
+   
 
    return (
       <div className='intro'>
@@ -71,9 +72,18 @@ const Intro = ({darkMode}) => {
             <img src={Vector1} alt='Vector1' />
             <img src={Vector2} alt='Vector2' />
             <img src={Me} alt='Mohammad El Itani' />
-            <img src={GlassesEmoji} alt='Glasses Emoji' />
+            <motion.img
+               initial={{ left: '-30%' }}
+               whileInView={{ left: '-20%' }}
+               transition={transition}
+               src={GlassesEmoji}
+               alt='Glasses Emoji'
+            />
             {/* Floating Mini Cards */}
-            <div
+            <motion.div
+               initial={{ left: '75%' }}
+               whileInView={{ left: '65%' }}
+               transition={transition}
                style={{
                   top: '-4%',
                   left: '68%',
@@ -85,8 +95,11 @@ const Intro = ({darkMode}) => {
                   txt2='Developer'
                   darkMode={darkMode}
                />
-            </div>
-            <div
+            </motion.div>
+            <motion.div
+               initial={{ top: '80%' }}
+               whileInView={{ top: '70%' }}
+               transition={transition}
                style={{
                   top: '19.5rem',
                   left: '2.8rem',
@@ -98,7 +111,7 @@ const Intro = ({darkMode}) => {
                   txt2='Fresh Graduate'
                   darkMode={darkMode}
                />
-            </div>
+            </motion.div>
             {/* blur div(s) */}
             <div className='blur' />
             <div

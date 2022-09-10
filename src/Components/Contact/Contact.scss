@@ -2,7 +2,7 @@
    padding: 0rem 3rem;
    display: flex;
    height: 80vh;
-   margin-top: 4rem;
+   margin-top: -2rem;
 
    .c-right {
       display: flex;
@@ -52,22 +52,21 @@
          margin: 2.75% 0;
       }
       .blur {
-        width: 22rem;
-        height: 14rem;
-        border-radius: 50%;
-        filter: blur(72px);
-        z-index: -999;
-        position: absolute;
-     }
-     .c-blur1 {
-        top: 12rem;
-        left: -6rem;
-     }
-     .c-blur2 {
-        top: 0rem;
-        left: 45rem;
-        background: var(--purple);
-     }
+         width: 22rem;
+         height: 14rem;
+         border-radius: 50%;
+         filter: blur(72px);
+         z-index: -999;
+         position: absolute;
+      }
+      .c-blur1 {
+         top: 12rem;
+         left: -6rem;
+      }
+      .c-blur2 {
+         top: 0rem;
+         left: 45rem;
+         background: var(--purple);
+      }
    }
-
 }

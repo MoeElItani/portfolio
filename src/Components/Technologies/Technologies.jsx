@@ -1,16 +1,21 @@
 import React from 'react'
 // Styles
 import './Technologies.scss'
-
+// Images
 import html from '../../img/html.png'
 import scss from '../../img/scss.png'
 import react from '../../img/react.png'
 import javascript from '../../img/javascript.png'
 import redux from '../../img/redux.png'
+// Imports
+import { motion } from 'framer-motion'
 
-const Technologies = ({ darkMode }) => {
+const Technologies = ({ darkMode, transition }) => {
    return (
-      <div className='technologies'>
+      <div
+         className='technologies'
+         style={{ marginTop: '15rem' }}
+      >
          {/* Left Side */}
          <div className='myEducation'>
             <span style={{ color: darkMode ? '#eee' : '' }}>
@@ -18,11 +23,11 @@ const Technologies = ({ darkMode }) => {
             </span>
             <span>Technologies</span>
             <span style={{ color: darkMode ? '#ccc' : '' }}>
-               I constantly look for the newest and most demanded
-               technologies to learn
+               I constantly look for the newest and most
+               demanded technologies to learn
                <br />
-               and improve my skill set, here are some of the
-               most important ones:
+               and improve my skill set, here are some of
+               the most important ones:
             </span>
             <div
                className='t-blur2'
@@ -32,15 +37,23 @@ const Technologies = ({ darkMode }) => {
 
          {/* Right Side */}
          <div className='t-right'>
-            <div
+            <motion.div
+               transition={transition}
+               initial={{ rotate: '60deg' }}
+               whileInView={{ rotate: '0deg' }}
+               viewport={{ margin: '-40px' }}
                className='t-mainCircle'
-               style={{ background: darkMode ? '#333' : '' }}
+               style={{
+                  background: darkMode ? '#333' : '',
+               }}
             >
                <div
                   className='t-secCircle'
                   style={{
                      background: darkMode ? '#555' : '',
-                     border: darkMode ? '4px solid #aaa' : '',
+                     border: darkMode
+                        ? '4px solid #aaa'
+                        : '',
                   }}
                >
                   <img src={html} alt='html' />
@@ -49,7 +62,9 @@ const Technologies = ({ darkMode }) => {
                   className='t-secCircle'
                   style={{
                      background: darkMode ? '#555' : '',
-                     border: darkMode ? '4px solid #aaa' : '',
+                     border: darkMode
+                        ? '4px solid #aaa'
+                        : '',
                   }}
                >
                   <img src={scss} alt='scss' />
@@ -58,7 +73,9 @@ const Technologies = ({ darkMode }) => {
                   className='t-secCircle'
                   style={{
                      background: darkMode ? '#555' : '',
-                     border: darkMode ? '4px solid #aaa' : '',
+                     border: darkMode
+                        ? '4px solid #aaa'
+                        : '',
                   }}
                >
                   <img src={react} alt='react' />
@@ -67,7 +84,9 @@ const Technologies = ({ darkMode }) => {
                   className='t-secCircle'
                   style={{
                      background: darkMode ? '#555' : '',
-                     border: darkMode ? '4px solid #aaa' : '',
+                     border: darkMode
+                        ? '4px solid #aaa'
+                        : '',
                   }}
                >
                   <img src={javascript} alt='javascript' />
@@ -76,16 +95,17 @@ const Technologies = ({ darkMode }) => {
                   className='t-secCircle'
                   style={{
                      background: darkMode ? '#555' : '',
-                     border: darkMode ? '4px solid #aaa' : '',
+                     border: darkMode
+                        ? '4px solid #aaa'
+                        : '',
                   }}
                >
                   <img src={redux} alt='redux' />
                </div>
-
-               {/* Background Circles */}
-               <div className='t-backCircle blueCircle'></div>
-               <div className='t-backCircle yellowCircle'></div>
-            </div>
+            </motion.div>
+            {/* Background Circles */}
+            <div className='t-backCircle blueCircle'></div>
+            <div className='t-backCircle yellowCircle'></div>
          </div>
       </div>
    )

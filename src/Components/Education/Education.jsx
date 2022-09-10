@@ -5,8 +5,10 @@ import './Education.scss'
 import HeartEmoji from '../../img/heartemoji.png'
 import Glasses from '../../img/glasses.png'
 import Card from '../Card/Card'
+// imports
+import { motion } from 'framer-motion'
 
-const Education = ({ darkMode }) => {
+const Education = ({ darkMode, transition }) => {
    return (
       <div className='technologies'>
          {/* Left Side */}
@@ -16,8 +18,8 @@ const Education = ({ darkMode }) => {
             </span>
             <span>Education</span>
             <span style={{ color: darkMode ? '#ccc' : '' }}>
-               Even though education is important, I was aware
-               that it's not enough...
+               Even though education is important, I was
+               aware that it's not enough...
                <br />
                so I always tried studying online courses
                specifically related to web
@@ -32,7 +34,11 @@ const Education = ({ darkMode }) => {
          </div>
          {/* Right Side */}
          <div className='cards'>
-            <div style={{ left: '20rem' }}>
+            <motion.div
+               transition={transition}
+               initial={{ left: '25rem' }}
+               whileInView={{ left: '20rem' }}
+            >
                <Card
                   darkMode={darkMode}
                   emoji={HeartEmoji}
@@ -40,9 +46,14 @@ const Education = ({ darkMode }) => {
                   school='Lebanese International University'
                   year='(2018 - 2022)'
                />
-            </div>
+            </motion.div>
             <div className='cards'>
-               <div style={{ left: '-1rem', top: '12rem' }}>
+               <motion.div
+                  transition={transition}
+                  initial={{ left: '-6rem' }}
+                  whileInView={{ left: '-1rem' }}
+                  style={{ top: '12rem' }}
+               >
                   <Card
                      darkMode={darkMode}
                      emoji={Glasses}
@@ -50,7 +61,7 @@ const Education = ({ darkMode }) => {
                      school='C.I.S College'
                      year='(2015-2017)'
                   />
-               </div>
+               </motion.div>
             </div>
 
             <div className='blur t-blur1' />
