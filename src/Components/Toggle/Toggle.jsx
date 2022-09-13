@@ -7,6 +7,7 @@ import Moon from '@iconscout/react-unicons/icons/uil-moon'
 // Imports
 import { themeContext } from '../../Context'
 import { useContext } from 'react'
+import { motion } from 'framer-motion'
 
 const Toggle = () => {
    const theme = useContext(themeContext)
@@ -14,11 +15,14 @@ const Toggle = () => {
    const clickHandler = () => {
       theme.dispatch({ type: 'toggle' })
    }
+   const transition = {duration: '1', type: 'spring'}
    return (
-      <div
+      <motion.div
          onClick={clickHandler}
          className='toggle'
-         style={darkMode ? {} : { border: '3px solid #333' }}
+         style={
+            darkMode ? {} : { border: '3px solid #333' }
+         }
       >
          <Moon
             color={darkMode ? 'var(--orange)' : '#333'}
@@ -28,19 +32,22 @@ const Toggle = () => {
             color={darkMode ? 'var(--orange)' : '#333'}
             size='1.25rem'
          />
-         <div
+         <motion.div
             className='t-button'
+            transition={transition}
+            initial={darkMode ? { left: '2px' } : { right: '2px' }}
+            animate={darkMode? {right: '2px'}: {left:'2px'}}
             style={
                darkMode
                   ? {
-                       left: '2px',
+                     //   left: '2px',
                        background: 'var(--orange)',
                        border: 'var(--orange)',
                     }
-                  : { right: '2px', background: '#333' }
+                  : { background: '#333' }                  
             }
          />
-      </div>
+      </motion.div>
    )
 }
 

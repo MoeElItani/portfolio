@@ -1,0 +1,68 @@
+.contact-form {
+  padding: 0rem 3rem;
+  display: flex;
+  height: 80vh;
+  margin-top: -2rem;
+}
+.contact-form .c-right {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex: 1;
+}
+.contact-form .c-right > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  align-items: center;
+}
+.contact-form .c-right .user {
+  width: 20rem;
+  height: 2rem;
+  padding: 0.3em;
+  outline: none;
+  border: 3px solid var(--orange);
+  border-radius: 8px;
+  font-size: 16px;
+}
+.contact-form .c-right textarea {
+  height: 4rem !important;
+}
+.contact-form .c-left {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.contact-form .c-left > :nth-child(1) {
+  font-size: 2.75rem;
+  font-weight: bold;
+  color: var(--black);
+}
+.contact-form .c-left > :nth-child(2) {
+  font-size: 2.75rem;
+  font-weight: bold;
+  color: var(--orange);
+}
+.contact-form .c-left > :nth-child(3) {
+  font-weight: 100;
+  font-size: 14px;
+  color: var(--gray);
+  margin: 2.75% 0;
+}
+.contact-form .c-left .blur {
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  filter: blur(72px);
+  z-index: -999;
+  position: absolute;
+}
+.contact-form .c-left .c-blur1 {
+  top: 12rem;
+  left: -6rem;
+}
+.contact-form .c-left .c-blur2 {
+  top: 0rem;
+  left: 45rem;
+  background: var(--purple);
+}/*# sourceMappingURL=Contact.css.map */

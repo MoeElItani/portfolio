@@ -3,7 +3,7 @@ import Toggle from '../Toggle/Toggle'
 // Styles
 import './Navbar.scss'
 
-const Navbar = () => {
+const Navbar = ({transition}) => {
    return (
       <div className='n-wrapper'>
          <div className='n-left'>

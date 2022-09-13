@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  align-items: center;
+  margin: -9rem -3.5rem -7rem -3.5rem;
+  position: relative;
+}
+.footer .f-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 4rem;
+  gap: 2rem;
+  color: #fff;
+}
+.footer .f-content .f-icons {
+  display: flex;
+  gap: 2rem;
+}
+.footer .f-content .f-copyrights {
+  font-size: 0.9rem;
+}/*# sourceMappingURL=Footer.css.map */

@@ -1,0 +1,50 @@
+.technologies {
+  padding: 0 3rem;
+  display: flex;
+  height: 70vh;
+  margin: 12rem 0 13rem 0;
+}
+.technologies .myEducation {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.technologies .myEducation > :nth-child(1) {
+  font-size: 2.75rem;
+  font-weight: bold;
+  color: var(--black);
+}
+.technologies .myEducation > :nth-child(2) {
+  font-size: 2.75rem;
+  font-weight: bold;
+  color: var(--orange);
+}
+.technologies .myEducation > :nth-child(3) {
+  font-weight: 100;
+  font-size: 14px;
+  color: var(--gray);
+  margin: 2.75% 0;
+}
+.technologies .cards {
+  position: relative;
+}
+.technologies .cards > * {
+  position: absolute;
+}
+.technologies .cards .blur {
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  filter: blur(72px);
+  z-index: -999;
+}
+.technologies .cards .t-blur1 {
+  top: 20rem;
+  left: -36rem;
+  background: #c1f5ff;
+}
+.technologies .cards .t-blur2 {
+  top: 8rem !important;
+  left: 32rem !important;
+  background: var(--purple);
+}/*# sourceMappingURL=Education.css.map */

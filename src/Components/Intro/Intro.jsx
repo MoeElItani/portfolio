@@ -97,7 +97,7 @@ const Intro = ({ darkMode, transition }) => {
                />
             </motion.div>
             <motion.div
-               initial={{ top: '80%' }}
+               initial={{ top: '82%' }}
                whileInView={{ top: '70%' }}
                transition={transition}
                style={{
