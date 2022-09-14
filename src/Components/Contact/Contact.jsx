@@ -41,10 +41,12 @@ const Contact = ({ darkMode }) => {
    }
 
    return (
-      <div className='contact-form'>
+      <div className='contact-form' id='Contact'>
          <div className='c-left'>
             <div className='c-left'>
-               <span style={{ color: darkMode ? '#eee' : '' }}>
+               <span
+                  style={{ color: darkMode ? '#eee' : '' }}
+               >
                   Get in touch
                </span>
                <span>Contact me</span>

@@ -10,7 +10,7 @@ import { motion } from 'framer-motion'
 
 const Education = ({ darkMode, transition }) => {
    return (
-      <div className='technologies'>
+      <div className='technologies' id='Education'>
          {/* Left Side */}
          <div className='myEducation'>
             <span style={{ color: darkMode ? '#eee' : '' }}>

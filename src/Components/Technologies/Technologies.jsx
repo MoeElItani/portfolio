@@ -14,6 +14,7 @@ const Technologies = ({ darkMode, transition }) => {
    return (
       <div
          className='technologies'
+         id='Technologies'
          style={{ marginTop: '15rem' }}
       >
          {/* Left Side */}

@@ -28,6 +28,10 @@
   gap: 4rem;
   margin-right: 3.5rem;
 }
+.n-wrapper .n-right .n-list Link:hover {
+  color: var(--orange);
+  cursor: pointer;
+}
 .n-wrapper .n-right .n-list li {
   list-style: none;
 }

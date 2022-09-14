@@ -2,8 +2,13 @@ import React from 'react'
 import Toggle from '../Toggle/Toggle'
 // Styles
 import './Navbar.scss'
+// Imports
+import { Link } from 'react-scroll'
+import Education from '../Education/Education'
+import Technologies from '../Technologies/Technologies'
+import Contact from '../Contact/Contact'
 
-const Navbar = ({transition}) => {
+const Navbar = ({ transition }) => {
    return (
       <div className='n-wrapper'>
          <div className='n-left'>
@@ -15,12 +20,35 @@ const Navbar = ({transition}) => {
             {/* Navbar List  & Contact Button */}
             <div className='n-list'>
                <ul>
-                  <li>Home</li>
-                  <li>Education</li>
-                  <li>Technologies</li>
+                  <Link
+                     spy={true}
+                     to='Navbar'
+                     smooth={true}
+                     activeClass='activeClass'
+                  >
+                     <li>Home</li>
+                  </Link>
+                  <Link
+                     spy={true}
+                     to='Education'
+                     smooth={true}
+                  >
+                     <li>Education</li>
+                  </Link>
+                  <Link
+                     spy={true}
+                     to='Technologies'
+                     smooth={true}
+                  >
+                     <li>Technologies</li>
+                  </Link>
                </ul>
             </div>
-            <button className='button n-button'>Contact</button>
+            <Link spy={true} to='Contact' smooth={true}>
+               <button className='button n-button'>
+                  Contact
+               </button>
+            </Link>
          </div>
       </div>
    )

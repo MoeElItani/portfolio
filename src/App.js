@@ -1,6 +1,5 @@
 // Styles
 import './App.scss'
-import './Components/breakpoints.scss'
 // Components
 import Navbar from './Components/Navbar/Navbar'
 import Intro from './Components/Intro/Intro'
@@ -15,7 +14,7 @@ import { useContext } from 'react'
 function App() {
    const theme = useContext(themeContext)
    const darkMode = theme.state.darkMode
-   const transition = { duration: 3, type: 'spring' }
+   const transition = { duration: 20, type: 'spring' }
    return (
       <div
          className='App'
@@ -25,7 +24,6 @@ function App() {
          }}
       >
          <Navbar transition={transition} />
-         <div className='responsive-test'>COLOR</div>
          <Intro
             darkMode={darkMode}
             transition={transition}

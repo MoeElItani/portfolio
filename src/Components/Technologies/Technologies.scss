@@ -1,8 +1,14 @@
+#Technologies {
+   margin: 5.75rem 0 8rem 0;
+   height: 100vh;
+}
 .technologies {
    .t-right {
+      margin: 5rem 0 8rem 0;
       position: relative;
 
       .t-mainCircle {
+         margin: 5rem 0 8rem 0;
          left: 9rem;
          top: 2rem;
          position: relative;
@@ -50,7 +56,6 @@
                scale: 0.75;
             }
          }
-
       }
       .t-backCircle {
          width: 13rem;
@@ -61,12 +66,12 @@
       }
       .blueCircle {
          background: #1949b8;
-         top: -2rem;
+         top: 3rem;
          left: 18rem;
       }
       .yellowCircle {
          background: #f5c32c;
-         top: 9rem;
+         top: 14rem;
          left: 18rem;
       }
    }

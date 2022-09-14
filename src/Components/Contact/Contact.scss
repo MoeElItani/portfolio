@@ -2,9 +2,11 @@
    padding: 0rem 3rem;
    display: flex;
    height: 80vh;
-   margin-top: -2rem;
+   margin: -2rem 0 5rem 0;
+
 
    .c-right {
+      margin-top: 9rem;
       display: flex;
       justify-content: center;
       position: relative;
@@ -31,6 +33,7 @@
    }
 
    .c-left {
+      margin-top: 1.5rem;
       display: flex;
       flex-direction: column;
       position: relative;

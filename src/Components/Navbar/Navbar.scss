@@ -30,6 +30,12 @@
             margin-right: 3.5rem;
             // background-color: #000;
          }
+         Link {
+            &:hover {
+               color: var(--orange);
+               cursor: pointer;
+            }
+         }
 
          li {
             list-style: none;

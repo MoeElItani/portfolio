@@ -2,12 +2,13 @@
    padding: 0 3rem;
    display: flex;
    height: 70vh;
-   margin: 12rem 0 13rem 0;
+   margin: 9rem 0 8rem 0;
 
    .myEducation {
       display: flex;
       flex-direction: column;
       position: relative;
+      margin-top: 3rem;
 
       & > :nth-child(1) {
          font-size: 2.75rem;
@@ -32,6 +33,7 @@
 
       & > * {
          position: absolute;
+         margin-top: 3rem;
       }
 
       .blur{
