@@ -14,7 +14,7 @@ import { useContext } from 'react'
 function App() {
    const theme = useContext(themeContext)
    const darkMode = theme.state.darkMode
-   const transition = { duration: 20, type: 'spring' }
+   const transition = { duration: 2, type: 'spring' }
    return (
       <div
          className='App'

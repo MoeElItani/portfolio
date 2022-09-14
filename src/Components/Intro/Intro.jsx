@@ -75,7 +75,7 @@ const Intro = ({ darkMode, transition }) => {
             <motion.img
                initial={{ left: '-30%' }}
                whileInView={{ left: '-20%' }}
-               opacity={transition}
+               transition={transition}
                src={GlassesEmoji}
                alt='Glasses Emoji'
             />
@@ -83,7 +83,7 @@ const Intro = ({ darkMode, transition }) => {
             <motion.div
                initial={{ left: '75%' }}
                whileInView={{ left: '65%' }}
-               opacity={transition}
+               transition={transition}
                style={{
                   top: '-4%',
                   left: '68%',
@@ -99,7 +99,7 @@ const Intro = ({ darkMode, transition }) => {
             <motion.div
                initial={{ top: '82%' }}
                whileInView={{ top: '70%' }}
-               opacity={transition}
+               transition={transition}
                style={{
                   top: '19.5rem',
                   left: '2.8rem',
