@@ -4,9 +4,6 @@ import Toggle from '../Toggle/Toggle'
 import './Navbar.scss'
 // Imports
 import { Link } from 'react-scroll'
-import Education from '../Education/Education'
-import Technologies from '../Technologies/Technologies'
-import Contact from '../Contact/Contact'
 
 const Navbar = ({ transition }) => {
    return (
