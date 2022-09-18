@@ -17,8 +17,39 @@
 }
 .footer .f-content .f-icons {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 .footer .f-content .f-copyrights {
   font-size: 0.9rem;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 820px) {
+  .footer {
+    margin: -12rem 0 -1rem 0;
+    justify-content: center;
+  }
+  .footer img {
+    height: 15rem;
+    width: 100vw;
+  }
+  .footer .f-content {
+    scale: 0.8;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .footer .f-content .f-icons {
+    position: static;
+    gap: 3.5rem;
+  }
+  .footer .f-content .f-icons > a,
+.footer .f-content .f-icons img {
+    display: inline-block;
+    position: relative;
+  }
+  .footer .f-content .f-icons img {
+    pointer-events: none;
+  }
+  .footer .f-content .f-copyrights {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=Footer.css.map */

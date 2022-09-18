@@ -18,7 +18,7 @@ const Technologies = ({ darkMode, transition }) => {
          style={{ marginTop: '15rem' }}
       >
          {/* Left Side */}
-         <div className='myEducation'>
+         <div className='myEducation' id='leftSide'>
             <span style={{ color: darkMode ? '#eee' : '' }}>
                Front-End
             </span>

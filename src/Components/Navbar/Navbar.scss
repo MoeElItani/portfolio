@@ -28,7 +28,6 @@
             display: flex;
             gap: 4rem;
             margin-right: 3.5rem;
-            // background-color: #000;
          }
          Link {
             &:hover {
@@ -47,6 +46,20 @@
       }
       .n-button {
          flex: 2;
+      }
+   }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 820px) {
+   .n-wrapper {
+      .n-list {
+         display: none;
+      }
+      .n-name {
+         text-align: center;
+      }
+      .n-button {
+         margin-left: 0.6rem;
       }
    }
 }

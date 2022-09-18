@@ -2,9 +2,10 @@
   padding: 0rem 3rem;
   display: flex;
   height: 80vh;
-  margin-top: -2rem;
+  margin: -2rem 0 5rem 0;
 }
 .contact-form .c-right {
+  margin-top: 9rem;
   display: flex;
   justify-content: center;
   position: relative;
@@ -29,6 +30,7 @@
   height: 4rem !important;
 }
 .contact-form .c-left {
+  margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -65,4 +67,39 @@
   top: 0rem;
   left: 45rem;
   background: var(--purple);
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .contact-form {
+    padding: 0;
+    flex-direction: column;
+    gap: 3rem;
+    height: 40rem;
+  }
+  .contact-form .c-left {
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-form .c-right {
+    margin: auto;
+  }
+  .contact-form .c-right form > input,
+.contact-form .c-right textarea {
+    width: 15rem !important;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 820px) {
+  .contact-form {
+    height: 40rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .c-left {
+    margin-bottom: -2rem;
+  }
+  .c-right {
+    margin-top: -5rem;
+  }
 }/*# sourceMappingURL=Contact.css.map */

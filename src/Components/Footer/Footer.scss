@@ -4,24 +4,55 @@
    margin: -9rem -3.5rem -7rem -3.5rem;
    position: relative;
 
-   .f-content{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 4rem;
-    gap: 2rem;
-    color: #fff;
-
-    .f-icons{
+   .f-content {
+      position: absolute;
       display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 4rem;
       gap: 2rem;
-    }
+      color: #fff;
 
-    .f-copyrights{
-      font-size: 0.9rem;
-    }
+      .f-icons {
+         display: flex;
+         gap: 1rem;
+      }
+
+      .f-copyrights {
+         font-size: 0.9rem;
+      }
+   }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 820px) {
+   .footer {
+      margin: -12rem 0 -1rem 0;
+      justify-content: center;
+      img {
+         height: 15rem;
+         width: 100vw;
+      }
+      .f-content {
+         scale: 0.8;
+         gap: 1.5rem;
+         text-align: center;
+         .f-icons {
+            position: static;
+            gap: 3.5rem;
+            & > a,
+            img {
+               display: inline-block;
+               position: relative;
+            }
+            img {
+               pointer-events: none;
+            }
+         }
+         .f-copyrights {
+            font-size: 0.8rem;
+         }
+      }
    }
 }

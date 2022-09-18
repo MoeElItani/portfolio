@@ -19,22 +19,25 @@ import Resume from '../../Resume/LinkedIn Profile.pdf'
 import { motion } from 'framer-motion'
 
 const Intro = ({ darkMode, transition }) => {
-   
-
    return (
       <div className='intro'>
          {/* left Side */}
          <div className='i-left'>
             <div className='i-name'>
-               <span style={{ color: darkMode ? '#eee' : '' }}>
+               <span
+                  style={{ color: darkMode ? '#eee' : '' }}
+               >
                   Hi I Am
                </span>
                <span>Mohammad El Itani</span>
-               <span style={{ color: darkMode ? '#ccc' : '' }}>
-                  I'm a Front-End Web Developer <br /> I'm also a
-                  Fresh Computer Science Graduate <br />
-                  Please check my Resume by clicking the download
-                  button below
+               <span
+                  id='subSpan'
+                  style={{ color: darkMode ? '#ccc' : '' }}
+               >
+                  I'm a Fresh Computer Science Graduate and
+                  a Junior React Front-End Developer
+                  <br />
+                  You can Download my Resume below
                </span>
                <a href={Resume}>
                   <button className='button t-button'>
@@ -54,14 +57,20 @@ const Intro = ({ darkMode, transition }) => {
                      rel='noreferrer'
                      href='https://www.linkedin.com/in/mohammad-el-itani/'
                   >
-                     <img src={LinkedIn} alt='LinkedIn Icon' />
+                     <img
+                        src={LinkedIn}
+                        alt='LinkedIn Icon'
+                     />
                   </a>
                   <a
                      target='_blank'
                      rel='noreferrer'
                      href='https://www.instagram.com/_mhmditani'
                   >
-                     <img src={Instagram} alt='Instagram Icon' />
+                     <img
+                        src={Instagram}
+                        alt='Instagram Icon'
+                     />
                   </a>
                </div>
             </div>
@@ -81,34 +90,35 @@ const Intro = ({ darkMode, transition }) => {
             />
             {/* Floating Mini Cards */}
             <motion.div
+               className='floating-div'
                initial={{ left: '75%' }}
                whileInView={{ left: '65%' }}
                transition={transition}
                style={{
                   top: '-4%',
                   left: '68%',
-               }}
-            >
-               <FloatingDiv
-                  img={Crown}
-                  txt1='Front-End'
-                  txt2='Developer'
-                  darkMode={darkMode}
-               />
-            </motion.div>
-            <motion.div
-               initial={{ top: '82%' }}
-               whileInView={{ top: '70%' }}
-               transition={transition}
-               style={{
-                  top: '19.5rem',
-                  left: '2.8rem',
+                  width: '14rem',
                }}
             >
                <FloatingDiv
                   img={ThumbUp}
                   txt1='Computer Science'
                   txt2='Fresh Graduate'
+                  darkMode={darkMode}
+               />
+            </motion.div>
+            <motion.div
+               className='floating-div'
+               style={{
+                  top: '19.5rem',
+                  left: '2.8rem',
+                  width: '14rem',
+               }}
+            >
+               <FloatingDiv
+                  img={Crown}
+                  txt1='React Front-End'
+                  txt2='Developer'
                   darkMode={darkMode}
                />
             </motion.div>

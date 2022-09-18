@@ -14,7 +14,7 @@
   padding: 0.5rem 3.5rem;
   overflow: hidden;
   color: var(--black);
-  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 .App .button {
   border-radius: 34px;
@@ -30,4 +30,10 @@
   color: var(--orange);
   border: 1px solid var(--orange);
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .App {
+    padding: 0.5rem;
+  }
 }/*# sourceMappingURL=App.css.map */

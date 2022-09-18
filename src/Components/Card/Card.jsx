@@ -4,7 +4,10 @@ import './Card.scss'
 
 const Card = ({ emoji, title, school, year, darkMode }) => {
    return (
-      <div className='card' style={{ background: darkMode ? '#333' : '' }}>
+      <div
+         className='card'
+         style={{ background: darkMode ? '#333' : '' }}
+      >
          <img src={emoji} alt='emoji' />
          <span>{title}</span>
          <span style={{ color: darkMode ? '#eee' : '' }}>
