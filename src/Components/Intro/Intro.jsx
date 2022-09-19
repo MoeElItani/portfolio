@@ -14,7 +14,7 @@ import GlassesEmoji from '../../img/glassesimoji.png'
 // Other Components
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 // Resume
-import Resume from '../../Resume/LinkedIn Profile.pdf'
+import Resume from '../../Resume/Mohammad El Itani - Resume.pdf'
 //imports
 import { motion } from 'framer-motion'
 
